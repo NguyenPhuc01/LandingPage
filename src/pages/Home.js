@@ -5,13 +5,12 @@ import About from "../Component/About";
 import Footer from "../Component/Footer";
 import Header from "../Component/Header";
 
-
 const Home = () => {
   return (
     <>
       <Header />
-      <About/>
-      <Footer/>
+      <About />
+      <Footer />
     </>
   );
 };

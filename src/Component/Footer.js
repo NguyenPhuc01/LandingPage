@@ -9,6 +9,16 @@ const FooterContainer = styled.div`
   display: flex;
   background: #2b2b39;
   position: relative;
+  @media only screen and (min-width: 740px) and (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  @media only screen and (max-width: 739px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
 `;
 const Footer02 = styled.div`
   height: 96px;
@@ -21,7 +31,11 @@ const Footer02 = styled.div`
   justify-content: space-around;
   align-items: center;
 `;
-const Icon = styled.div``;
+const Icon = styled.div`
+  @media only screen and (max-width: 739px) {
+    display: none;
+  }
+`;
 const IconImage = styled.img`
   margin-right: 8px;
 `;
@@ -50,6 +64,19 @@ const Menu = styled.div`
   display: flex;
   justify-content: space-between;
   width: 50%;
+  @media only screen and (min-width: 740px) and (max-width: 1023px) {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+  }
+  @media only screen and (max-width: 739px) {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    padding: 0px 20px;
+  }
 `;
 const Home = styled.div`
   display: flex;
@@ -63,6 +90,9 @@ const TextFooter = styled.span`
   line-height: 46px;
   letter-spacing: 0.0125em;
   color: #e7e7e7;
+  @media only screen and (max-width: 739px) {
+    font-size: 12px;
+  }
 `;
 const Subscribe = styled.div`
   width: 339px;
@@ -70,6 +100,12 @@ const Subscribe = styled.div`
   padding: 90px 135px 0px 0px;
   display: flex;
   flex-direction: column;
+  @media only screen and (min-width: 740px) and (max-width: 1023px) {
+    display: none;
+  }
+  @media only screen and (max-width: 739px) {
+    display: none;
+  }
 `;
 const Title = styled.span`
   font-family: "Inter";
@@ -103,7 +139,11 @@ const SearchSub = styled.div`
   align-items: center;
 `;
 
-const TitleFooter = styled.h3``;
+const TitleFooter = styled.h3`
+  @media only screen and (max-width: 739px) {
+    font-size: 16px;
+  }
+`;
 const Footer = () => {
   return (
     <FooterContainer>

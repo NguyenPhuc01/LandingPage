@@ -70,6 +70,10 @@ const Menu = styled.div`
     height: auto;
     width: auto;
   }
+  @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    width: 100%;
+    padding: 78px 80px 0px 80px;
+  }
   @media only screen and (max-width: 739px) {
     display: flex;
     justify-content: space-between;
@@ -101,7 +105,10 @@ const Subscribe = styled.div`
   display: flex;
   flex-direction: column;
   @media only screen and (min-width: 740px) and (max-width: 1023px) {
+    width: auto;
     display: none;
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1199px) {
   }
   @media only screen and (max-width: 739px) {
     display: none;
@@ -125,7 +132,7 @@ const SubscribeDescription = styled.span`
   margin-top: 18px;
 `;
 const InputSubscribe = styled.input`
-  margin-top: 32px;
+  /* margin-top: 32px; */
   width: 339px;
   height: 48px;
 `;
@@ -137,6 +144,7 @@ const ButtonSub = styled.button`
 const SearchSub = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 30px;
 `;
 
 const TitleFooter = styled.h3`

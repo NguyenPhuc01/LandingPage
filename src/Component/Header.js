@@ -5,83 +5,7 @@ import Avatar1 from "../images/Avater (1).png";
 import Avatar2 from "../images/Avater (2).png";
 import Vector from "../images/Vector.png";
 import Chat from "../images/Chat.png";
-const Navbar = styled.div`
-  border-bottom: 0.1px solid #217bf4;
-  height: 70px;
-  margin: 0px;
-  display: flex;
-  align-items: center;
-  padding: 0px 150px;
-  @media only screen and (max-width: 739px) {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 30px;
-  }
-  @media only screen and (min-width: 740px) and (max-width: 1023px) {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-  }
-  @media only screen and (min-width: 1024) {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-  }
-`;
-const Logo = styled.img`
-  height: 70px;
-  cursor: pointer;
-`;
-const NavbarLeft = styled.div`
-  display: flex;
-  align-items: center;
-  width: 50%;
-  justify-content: space-around;
-  @media only screen and (max-width: 739px) {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-  }
-  @media only screen and (min-width: 740px) and (max-width: 1023px) {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-  }
-`;
-const ContentNavBar = styled.div`
-  display: flex;
-  align-items: center;
-  width: 70%;
-  justify-content: space-around;
-  @media only screen and (max-width: 739px) {
-    display: none;
-  }
-  @media only screen and (min-width: 740px) and (max-width: 1023px) {
-    display: none;
-  }
-`;
-const NavbarRight = styled.div`
-  width: 50%;
-  display: flex;
-  justify-content: end;
-`;
-const Button = styled.button`
-  background-color: #217bf4;
-  color: #fff;
-  border: none;
-  border-radius: 14px;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
-`;
-const SearchInput = styled.input`
-  border-radius: 5px;
-  margin-right: 20px;
-  :focus {
-    outline: none;
-  }
-  padding-left: 10px;
-`;
+
 const Body = styled.div`
   padding: 0px 150px;
   padding-top: 100px;
@@ -101,8 +25,6 @@ const Body = styled.div`
     height: 100vh;
 
     padding: 0px;
-  }
-  @media only screen and (min-width: 1024) {
   }
 `;
 const BodyLeft = styled.div`
@@ -130,6 +52,10 @@ const BodyRight = styled.div`
   }
   @media only screen and (max-width: 739px) {
     margin-top: 30px;
+    width: auto;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
   }
 `;
 const ButtonNetBook = styled.div`
@@ -154,7 +80,7 @@ const Title = styled.h3`
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 46px;
   line-height: 66px;
   color: #0a093d;
 `;
@@ -162,7 +88,7 @@ const Description = styled.span`
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 28px;
   color: #656464;
 `;
@@ -216,6 +142,12 @@ const WrapImage = styled.div`
   @media only screen and (min-width: 740px) and (max-width: 1023px) {
     width: 100%;
   }
+  @media only screen and (max-width: 739px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const ImageVector = styled.img`
   width: 350.78px;
@@ -232,11 +164,12 @@ const ImageAvatar1 = styled.img`
     width: 169.63px;
     height: 155.18px;
   }
+
   @media only screen and (max-width: 739px) {
     width: 109.63px;
     height: 105.18px;
     top: 28px;
-    left: 30px;
+    left: 35px;
   }
 `;
 const ImageAvatar2 = styled.img`
@@ -253,7 +186,11 @@ const ImageAvatar2 = styled.img`
     width: 109.63px;
     height: 105.18px;
     top: 28px;
-    left: 180px;
+    left: 205px;
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    top: 28px;
+    left: 485px;
   }
 `;
 const ImageAvatar3 = styled.img`
@@ -262,15 +199,17 @@ const ImageAvatar3 = styled.img`
   height: 230.69px;
   top: 250px;
   left: 250px;
-  @media only screen and (min-width: 740px) and (max-width: 1023px) {
-    width: 169.63px;
-    height: 155.18px;
+
+  @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    top: 350px;
+    left: 280px;
   }
+
   @media only screen and (max-width: 739px) {
     width: 109.63px;
     height: 105.18px;
     top: 170px;
-    left: 120px;
+    left: 125px;
   }
 `;
 const ImageAvatar4 = styled.img`
@@ -283,32 +222,16 @@ const ImageAvatar4 = styled.img`
     width: 38.63px;
     height: 25.18px;
     top: 28px;
-    left: 130px;
+    left: 150px;
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    top: 28px;
+    left: 400px;
   }
 `;
 const Header = () => {
   return (
     <>
-      <Navbar>
-        <NavbarLeft>
-          <Logo
-            src="https://seeklogo.com/images/N/netbook-media-logo-FA4FE0566F-seeklogo.com.gif"
-            alt=""
-          />
-          <ContentNavBar>
-            <span>Home</span>
-            <span>Home</span>
-            <span>Home</span>
-            <span>Home</span>
-          </ContentNavBar>
-        </NavbarLeft>
-
-        <NavbarRight>
-          <SearchInput type="search" />
-          <Button>Login</Button>
-        </NavbarRight>
-      </Navbar>
-
       <Body>
         <BodyLeft>
           <ButtonNetBook>Netbook community</ButtonNetBook>

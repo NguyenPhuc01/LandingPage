@@ -4,26 +4,27 @@ import image from "../images/Image.png";
 import image1 from "../images/Image (1).png";
 import image2 from "../images/Image (2).png";
 const Container = styled.div`
-  height: 70vh;
+  height: 90vh;
   padding: 0px 135px;
   display: flex;
   @media only screen and (min-width: 740px) and (max-width: 1023px) {
     padding: 0px 20px;
     display: flex;
-    height: 40vh;
+    height: 50vh;
 
     justify-content: space-between;
   }
   @media only screen and (min-width: 1024px) and (max-width: 1190px) {
     padding: 0px 20px;
     display: flex;
-    height: 40vh;
+    height: 50vh;
     justify-content: space-between;
   }
   @media only screen and (max-width: 739px) {
     display: flex;
     flex-direction: column;
     padding: 0px 20px;
+    height: 140vh;
   }
 `;
 const LeftContainer = styled.div`
@@ -36,6 +37,8 @@ const RightContainer = styled.div`
   @media only screen and (min-width: 740px) and (max-width: 1023px) {
     display: flex;
     justify-content: end;
+  }
+  @media only screen and (max-width: 739px) {
   }
 `;
 const NetbooksTitle = styled.span`
@@ -74,6 +77,9 @@ const DescriptionAbout = styled.h3`
     font-size: 14px;
     line-height: 15px;
   }
+  @media only screen and (max-width: 739px) {
+    font-size: 12px;
+  }
 `;
 const Circle = styled.div`
   width: 8px;
@@ -106,6 +112,9 @@ const TitleCircle = styled.span`
 const Box = styled.div`
   width: 406px;
   height: 352px;
+  @media only screen and (max-width: 739px) {
+    width: 85vw;
+  }
 `;
 const BoxImage = styled.div`
   display: flex;
